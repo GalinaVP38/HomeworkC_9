@@ -7,7 +7,7 @@ Console.WriteLine("Введите начальное число M:");
 int numN = Convert.ToInt32(Console.ReadLine());
 
 
-void GetNateralSum (int numM, int numN, int sum)
+void GetNaturalSum (int numM, int numN, int sum)
 {
     if (numM > numN) 
     {
@@ -15,7 +15,7 @@ void GetNateralSum (int numM, int numN, int sum)
         return;
     }
     sum = sum + (numM++);
-    GetNateralSum(numM, numN, sum);
+    GetNaturalSum(numM, numN, sum);
 }
 
-GetNateralSum(numM, numN, 0);
+GetNaturalSum(numM, numN, 0);
